@@ -440,7 +440,7 @@ export default {
 
         this.addObject(object);
 
-        this.$emit('on-load');
+        this.$emit('on-load', object);
       }, (xhr) => {
         this.$emit('on-progress', xhr);
       }, (err) => {
